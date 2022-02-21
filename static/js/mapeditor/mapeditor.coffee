@@ -343,7 +343,7 @@ class @MapEditor
       bh = Number.parseFloat(bh)
     catch err
 
-    if Number.isInteger(w) and Number.isInteger(h) and w>0 and h>0 and w<129 and h<129 and @selected_map? and (w != @mapview.map.width or h != @mapview.map.height or bw != @mapview.map.block_width or bh != @mapview.map.block_height) and Number.isInteger(bw) and Number.isInteger(bh) and bw>0 and bh>0 and bw<65 and bh<65
+    if Number.isInteger(w) and Number.isInteger(h) and w>0 and h>0 and w<129 and h<129 and @selected_map? and (w != @mapview.map.width or h != @mapview.map.height or bw != @mapview.map.block_width or bh != @mapview.map.block_height) and Number.isInteger(bw) and Number.isInteger(bh) and bw>0 and bh>0 and bw<257 and bh<257
       @mapview.map.resize(w,h,bw,bh)
       @mapview.windowResized()
       @mapview.update()
